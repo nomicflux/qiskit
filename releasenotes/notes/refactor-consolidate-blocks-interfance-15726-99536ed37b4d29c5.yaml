@@ -1,0 +1,10 @@
+---
+fixes:
+  - |
+    #15726 Refactor consolidate_blocks.rs to borrow DecomposerType instead of cloning
+    issues such as by doing:
+
+    See `#15726 <https://github.com/Qiskit/qiskit/issues/15726>`__.
+
+features_transpiler:
+  - consolidate_blocks now has DecomposerRef from python and from Rust, instead of clones
